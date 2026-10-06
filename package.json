@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --win nsis --x64"
+    "dist": "electron-builder --win nsis --x64 --publish never"
   },
   "devDependencies": {
     "electron": "^38.2.2",
@@ -17,7 +17,7 @@
   "build": {
     "appId": "com.inthevoid.costaccounting",
     "productName": "In The Void - محاسبة التكاليف",
-    "artifactName": "In-The-Void-Cost-Accounting-Setup-${version}.${ext}",
+    "artifactName": "In-The-Void-Cost-Accounting-Setup-\u0024{version}.\u0024{ext}",
     "asar": true,
     "files": [
       "index.html",
@@ -34,7 +34,7 @@
           "arch": ["x64"]
         }
       ],
-      "artifactName": "In-The-Void-Cost-Accounting-Setup-${version}.${ext}"
+      "artifactName": "In-The-Void-Cost-Accounting-Setup-\u0024{version}.\u0024{ext}"
     },
     "nsis": {
       "oneClick": false,
